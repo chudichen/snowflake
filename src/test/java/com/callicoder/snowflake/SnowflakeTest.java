@@ -71,4 +71,11 @@ public class SnowflakeTest {
         }
     }
 
+    @Test
+    public void generatorTest() {
+        Snowflake snowflake = new Snowflake(256);
+        long id = snowflake.nextId();
+        System.out.println(id);
+    }
+
 }
